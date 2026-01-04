@@ -65,14 +65,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
   color: var(--light);
   background: rgba(9, 4, 63, 0.5);
   padding: 16px 0;
 }
 
 .logo img {
-  height: 50px;
+  height: 120px;
 }
 
 .logo h1 {
@@ -99,6 +99,7 @@ body {
 
 .intro p {
   margin-bottom: 12px;
+  font-size: 1.2em;
 }
 
 h2, p {
