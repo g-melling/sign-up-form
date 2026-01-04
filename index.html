@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="bg-image">
-        <img src="images/background.jpg" alt="Abstract pattern">
+
+  <!-- CENTERED CONTAINER -->
+  <div class="container">
+
+    <!-- LEFT IMAGE PANEL -->
+    <div class="image-panel">
+      <div class="logo">
+        <img src="images/logo_transparent.png" alt="Mealla logo">
+        <h1>MEALLA</h1>
+      </div>
     </div>
-    <div id="logo">
-        <img src="images/logo.png" alt="Mealla logo">
-    </div>
-</body>
-</html>
+
+    <!-- RIGHT FORM PANEL -->
+    <div class="form-panel">
+      <div class="intro">
+        <p>
+          This is not a real online service! Sign up to receive our newsletter
+          and get the latest updates straight to your inbox.
+        </p>
+        <p>You know you want to.</p>
+      </div>
+
+      <form>
+        <h2>Let’s do this!</h2>
+
+        <div class="form-fields">
+          <div class="field">
+            <label>FIRST NAME</label>
+            <input type="text">
+          </div>
+
+          <div class="field">
+            <label>LAST NAME</label>
+            <input type="text">
+          </div>
+
+          <div class="field full">
+            <label>EMAIL</label>
+            <input type="email">
+          </div>
+
+          <div class="field full">
+            <label>PHONE NUMBER</label>
+            <input type="tel">
+          </div>
+
+          <div class="field">
+            <label>PASSWORD</label>
+            <input type="password">
+          </div>
+
+          <div class="field">
+            <label>CONFIRM PASSWORD</label>
+            <input type="password">
+          </div>
+        </div>
+
+        <button type="submit">Create Account</button>
+      </form>
+
+      <p class="login">
+        Already have an account? <a href="#">Log in</a>
+      </p>

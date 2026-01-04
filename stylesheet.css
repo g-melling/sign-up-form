@@ -1,33 +1,154 @@
-@font-face {
-    font-family: 'Margherita';
-    src: url('fonts/Margherita-Regular.woff2') format('woff2'),
-        url('fonts/Margherita-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Petahja';
-    src: url('fonts/Petahja-Regular.woff2') format('woff2'),
-        url('fonts/Petahja-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
+/* ---------- RESET ---------- */
 * {
-    font-family: 'Margherita';
-}
-
-h2, h3 {
-    font-weight: normal;
-}
-
-h2 {
-    font-family: 'Margherita';
-}
-
-h3 {
-    font-family: 'Petahja';
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* ---------- PAGE LAYOUT ---------- */
+  body {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* ---------- LEFT IMAGE ---------- */
+  .image-panel {
+    flex: 1;
+    background: url("images/background.jpg") center / cover no-repeat;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 0;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+  }
+  
+  /* ---------- RIGHT PANEL ---------- */
+  .form-panel {
+    flex: 1.2;
+    background: #f9fafb;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* ---------- INTRO TEXT ---------- */
+  .intro {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  
+  .intro p {
+    margin-bottom: 16px;
+    max-width: 500px;
+  }
+  
+  /* ---------- FORM ---------- */
+  form {
+    background: white;
+    padding: 24px 32px 32px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* ---------- FORM FIELDS ---------- */
+  .form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  
+  label {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+    color: #555;
+  }
+  
+  input {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #596d48;
+  }
+  
+  /* ---------- BUTTON ---------- */
+  button {
+    margin-top: 24px;
+    padding: 12px 32px;
+    background: #596d48;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #4c5f3f;
+  }
+  
+  /* ---------- LOGIN TEXT ---------- */
+  .login {
+    margin-top: 24px;
+    font-size: 0.9rem;
+  }
+  
+  .login a {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .image-panel {
+      height: 35vh;
+    }
+  
+    .form-panel {
+      padding: 40px 24px;
+    }
+  
+    .field {
+      width: 100%;
+    }
+  }
+  
