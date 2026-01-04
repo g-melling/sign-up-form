@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Margherita';
+    src: url('Margherita-Regular.woff2') format('woff2'),
+        url('Margherita-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Petahja';
+    src: url('Petahja-Regular.woff2') format('woff2'),
+        url('Petahja-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

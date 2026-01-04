@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Margherita';
+    src: url('fonts/Margherita-Regular.woff2') format('woff2'),
+        url('fonts/Margherita-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Petahja';
+    src: url('fonts/Petahja-Regular.woff2') format('woff2'),
+        url('fonts/Petahja-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Margherita';
+}
+
+h2, h3 {
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Margherita';
+}
+
+h3 {
+    font-family: 'Petahja';
+}
